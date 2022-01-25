@@ -3,7 +3,7 @@ import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 import React from 'react';
 import appConfig from './config.json';
-import {ReactComponent as StarWarsImg} from './img/star-wars-the-lars-homestead-at-tatooine.jpg';
+//import {ReactComponent as StarWarsImg} from './img/star-wars-the-lars-homestead-at-tatooine.jpg';
 import { useRouter } from "next/router";
 
 
@@ -47,8 +47,9 @@ export default function PaginaInicial() {
         <Box
           styleSheet={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            backgroundColor: appConfig.theme.colors.primary[500],
-            backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            backgroundColor: appConfig.theme.colors.neutrals["000"],
+            //backgroundImage: 'url(https://virtualbackgrounds.site/wp-content/uploads/2020/08/the-matrix-digital-rain.jpg)',
+            backgroundImage: 'url(/static/img/star-wars-the-lars-homestead-at-tatooine.jpg)',
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundBlendMode: 'multiply',
           }}
         >
@@ -125,9 +126,10 @@ export default function PaginaInicial() {
                 fullWidth
                 buttonColors={{
                   contrastColor: appConfig.theme.colors.neutrals["000"],
-                  mainColor: appConfig.theme.colors.primary[500],
-                  mainColorLight: appConfig.theme.colors.primary[400],
-                  mainColorStrong: appConfig.theme.colors.primary[600],
+                  mainColor: appConfig.theme.colors.neutrals["998"],
+                  mainColorLight: appConfig.theme.colors.neutrals["997"],
+                  mainColorStrong: appConfig.theme.colors.neutrals["997"]
+                  
                 }}
               />
             </Box>
